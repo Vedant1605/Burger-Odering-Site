@@ -1,0 +1,31 @@
+.Order{
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto ;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 3px ;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 7px 1px grey;
+    background: linear-gradient(rgba(255, 167, 96, 0.308),rgba(240, 238, 238, 0.5));
+    
+}
+.Ingredients{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.Blocks{
+    border: 1px solid red;
+    border-radius: 3px ;
+    background:linear-gradient(-16deg, #ff5656, #fffcfc91);
+    margin: 5px ;
+    padding: 3px;
+    box-sizing: border-box;
+}
+@media(max-width:450px){
+    .Ingredients{
+        display: flex;
+        flex-direction: column;
+    }
+}

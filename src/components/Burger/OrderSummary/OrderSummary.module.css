@@ -1,0 +1,6 @@
+.OrderSummary{
+    border:0.5px double rgba(253, 141, 141, 0.534);
+    border-radius: 5px ;
+    text-align: center;
+    color: rgb(43, 24, 88);
+}

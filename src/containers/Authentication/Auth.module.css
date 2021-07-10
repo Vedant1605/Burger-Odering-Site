@@ -1,0 +1,26 @@
+.Auth{
+    width: 100%;
+    height: 100%;
+    margin-top: 25%;
+}
+
+.AuthBox{
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 1px solid purple;
+    border-radius: 5px;
+    background: repeating-linear-gradient(rgba(188, 170, 255, 0.192),#56f9ff1a);
+    padding: 5px ;
+     box-shadow:2px 2px 9px 0px #ffc0cb82;
+    
+}
+.Error{
+    margin: -17px 10px 100px 10px;
+    margin-bottom: 100px;
+    background-color: #ffd16fb3;
+    color: rgb(255, 27, 27);
+    padding: 10px;
+    border-radius: 5px 
+    
+}

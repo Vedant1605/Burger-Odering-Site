@@ -1,0 +1,67 @@
+.BuildControls{
+width: 100%;
+box-sizing: border-box;
+background: linear-gradient(#fab355, #ffdf52);
+display: flex;
+flex-flow: column;
+align-items: center;
+box-shadow: 0 2px 2px gray;
+margin: 1px;
+padding: 10px 0px;
+}
+.Price{
+    border: 0.01px solid red;
+    border-radius: 8px;
+    padding: 10px;
+    color: #1a0e16ee;
+    font-weight: 900;
+    margin: 2px auto 35px auto;
+    background: linear-gradient(rgba(253, 182, 244, 0.507),rgb(201, 238, 255));
+}
+
+.OrderButton{
+    background:linear-gradient( rgb(255, 145, 0),rgba(255, 0, 0, 0.726));
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #966909;
+    border-radius: 8px ;
+    color: #fdfaf4;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 0.5px #000000;
+    margin: auto;   
+    transition: ease 700ms ;
+    
+}
+
+.OrderButton:hover,.OrderButton:active {
+    background: linear-gradient(rgb(176, 255, 50),rgb(121, 177, 31));
+    color: #0f0c06;
+    font-weight: bold;
+    /* transform: scale(1.1); */
+}
+
+.OrderButton:disabled {
+    background: rgb(148, 148, 139);
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #f7f4f4;
+}
+
+.OrderButton:not(:disabled) {
+    animation: enable 0.5s linear;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
