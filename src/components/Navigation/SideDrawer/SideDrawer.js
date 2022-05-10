@@ -3,8 +3,8 @@ import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
-import Aux from '../../../HOC/Auxillary/Auxillary'
-
+import Aux from '../../../HOC/Auxillary/Auxillary';
+const IMG_URL='https://cdn.iconscout.com/icon/premium/png-256-thumb/burger-7-136282.png';
 const sideDrawer = (props) => {
     let attachedClassses=[classes.SideDrawer,classes.Close]
     if(props.open){
@@ -18,8 +18,8 @@ const sideDrawer = (props) => {
         />
         <div className={attachedClassses.join(` `)}
         onClick={props.closed}>
-        <div className={classes.Logo} >
-        <Logo />
+        <div >
+        <img src={IMG_URL} width="30%" height="30%" />
         </div>
         <nav>
         <NavigationItems

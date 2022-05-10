@@ -6,11 +6,15 @@
     left: 0;
     top: 0;
     z-index: 200;
-    background: linear-gradient(rgba(255, 226, 98, 0.904),rgba(141, 115, 0, 0.966));
+    background: #ffff;
     padding: 32px 16px ;
     box-sizing: border-box;
     transition: transform 0.5s ease-in-out ;
    
+}
+.SideDrawer a{
+    margin-top: 2em;
+    text-decoration: none;
 }
 .Logo{
     height: 9%;

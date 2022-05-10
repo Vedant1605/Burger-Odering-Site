@@ -1,12 +1,12 @@
 .Order{
     width: 80%;
     padding: 10px;
-    margin: 10px auto ;
-    border: 1px solid rgb(39, 39, 39);
-    border-radius: 3px ;
+    margin: 3em auto;
+    /* border: 1px solid rgb(39, 39, 39); */
+    border-radius: 3px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 7px 1px grey;
-    background: linear-gradient(rgba(255, 167, 96, 0.308),rgba(240, 238, 238, 0.5));
+    box-shadow: 0px 2px 5px 0px #c9c9c9;
+    background: linear-gradient(#f8feff4f,rgb(252 237 172 / 17%));
     
 }
 .Ingredients{
@@ -16,11 +16,11 @@
     flex-direction: row;
 }
 .Blocks{
-    border: 1px solid red;
-    border-radius: 3px ;
-    background:linear-gradient(-16deg, #ff5656, #fffcfc91);
-    margin: 5px ;
-    padding: 3px;
+    /* border: 1px solid red; */
+    border-radius: 5px ;
+    background:linear-gradient(-16deg, #ffcf56, #f5c64f91);
+    margin: .71em ;
+    padding: 1em;
     box-sizing: border-box;
 }
 @media(max-width:450px){

@@ -1,9 +1,10 @@
 .Logo{
-    background-color:#fff;
-    padding: 8px;
     height: 80%;
-    box-sizing: border-box;
-    border-radius: 5px;
+    display: flex;
+    color: red;
+}
+.Logo h3{
+    align-items:center ;
 }
 .Logo img {
     height: 100%;

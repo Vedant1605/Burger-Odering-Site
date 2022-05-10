@@ -192,8 +192,9 @@ class ContactData extends Component {
             })
         }
 
-        let form = (<div>
-            <h2 style={{ color: "white" }}>Enter your Details</h2>
+        let form = (<div className={classes.fm}>
+            <br/>
+            <h2>Enter your Details</h2>
             <form onSubmit={this.orderHandler}>
                     {formElemArray.map(formElm=>{
                         return <Input elementType={formElm.config.elementType} elementConfig={formElm.config.elementConfig} key={formElm.id} value={formElm.config.value} changed={(event)=>this.InputChangeHandler(event,formElm.id)}
