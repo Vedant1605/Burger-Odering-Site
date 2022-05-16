@@ -42,7 +42,7 @@
 }
 
 .BuildControl .More {
-    background: linear-gradient( #8F5E1E,rgba(172, 152, 64, 0.39));
+    background: linear-gradient(rgb(246 107 15 / 85%),#ffad46);
     
     color: white;
 }
