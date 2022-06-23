@@ -32,14 +32,12 @@ const orderReducer=(state=initialState,action)=>{
                 loading:false,
                 order:state.order.concat(newOrder),
             }
-            break;
             
         case actionType.PURCHASE_BURGER_FAILED:
             return{
                 ...state,
                 loading:false
             }
-            break;
             case actionType.FETCH_ORDERS_JUST_START:
                 return{
                     ...state,
@@ -58,7 +56,6 @@ const orderReducer=(state=initialState,action)=>{
             } 
         default:
             return state
-            break;
     }
 }
 export default orderReducer

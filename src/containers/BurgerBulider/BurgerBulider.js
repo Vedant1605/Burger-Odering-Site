@@ -50,8 +50,14 @@ class BurgerBuilder extends Component {
         const disabledInfo = {
             ...this.props.ings
         }
+        const disabledInfoMore = {
+            ...this.props.ings
+        }
         for (let key in disabledInfo) {
-            disabledInfo[key] = disabledInfo[key] <= 0
+            disabledInfo[key] = disabledInfo[key] <= 0;
+        }
+        for (let key in disabledInfoMore) {
+            disabledInfoMore[key] = disabledInfoMore[key] >= 2;
         }
         let orderSummary = null
 
@@ -65,6 +71,7 @@ class BurgerBuilder extends Component {
                         ingredientAdded={this.props.onIngredientAdded}
                         ingredientRemoved={this.props.onIngredientRemoved}
                         disabled={disabledInfo}
+                        disabledMore={disabledInfoMore}
                         price={this.props.tPrice}
                         purchasable={!this.updatePurchaseState(this.props.ings)}
                         ordered={this.purchaseHandler}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
@@ -19,7 +18,7 @@ const sideDrawer = (props) => {
         <div className={attachedClassses.join(` `)}
         onClick={props.closed}>
         <div >
-        <img src={IMG_URL} width="30%" height="30%" />
+        <img src={IMG_URL} width="30%" height="30%" alt='null'/>
         </div>
         <nav>
         <NavigationItems
