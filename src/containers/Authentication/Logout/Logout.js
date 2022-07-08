@@ -5,7 +5,9 @@ import { Redirect } from 'react-router';
 
 class Logout extends Component{
     componentDidMount(){
-        this.props.onLogout()
+        let x=window.confirm("Sure u want to logout !! Please come back soon")
+        if(x)this.props.onLogout()
+        else return <Redirect to="/" />
     }
     render(){
         return <Redirect to="/" />;
